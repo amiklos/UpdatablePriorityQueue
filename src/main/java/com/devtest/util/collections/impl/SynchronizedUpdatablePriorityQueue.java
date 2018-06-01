@@ -19,7 +19,8 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
     }
 
     /**
-     * Complexity O(log n)
+     * {@inheritDoc}
+     * Complexity : O(log n)
      */
     @Override
     public synchronized Element insertElementWithPriority(Object priority, Object data) {
@@ -37,7 +38,8 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
     }
 
     /**
-     * Complexity O(1)
+     * {@inheritDoc}
+     * Complexity : O(1)
      */
     @Override
     public synchronized Element getElementWithHighestPriority() {
@@ -45,7 +47,8 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
     }
 
     /**
-     * Complexity O(log n)
+     * {@inheritDoc}
+     * Complexity : O(log n)
      */
     @Override
     public synchronized void changeElementPriority(Element e, Object newPriority) {
@@ -60,7 +63,8 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
     }
 
     /**
-     * Complexity O(log n)
+     * {@inheritDoc}
+     * Complexity : O(log n)
      */
     @Override
     public synchronized Element removeElementWithHighestPriority() {
