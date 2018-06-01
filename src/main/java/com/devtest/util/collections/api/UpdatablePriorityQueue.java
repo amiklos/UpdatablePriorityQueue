@@ -27,7 +27,7 @@ public interface UpdatablePriorityQueue {
      * Change the current priority of the element with the new priority specified.
      * If the element does not exist no changes will be performed.
      *
-     * @param element     - the element
+     * @param element     - the element to be updated
      * @param newPriority - new priority of the element
      */
     void changeElementPriority(Element element, Object newPriority);
