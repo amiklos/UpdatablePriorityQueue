@@ -18,6 +18,7 @@ public interface UpdatablePriorityQueue {
 
     /**
      * Retrieves the object with the highest priority.
+     * If multiple elements have the highest priority, one of them is chosen arbitrarily.
      *
      * @return Element - the element with the highest priority, null if the queue is empty
      */
@@ -34,6 +35,7 @@ public interface UpdatablePriorityQueue {
 
     /**
      * Removes the element with the highest priority.
+     * If multiple elements have the highest priority, one of them is chosen arbitrarily.
      *
      * @return Element - the element with the highest priority (position of the removed element will become -1),
      * null if the queue is empty
