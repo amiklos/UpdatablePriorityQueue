@@ -20,7 +20,7 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
 
     /**
      * {@inheritDoc}
-     * Complexity : O(log n)
+     * Complexity :  Amortized O(log n)
      */
     @Override
     public synchronized Element insertElementWithPriority(Object priority, Object data) {
@@ -91,7 +91,7 @@ public class SynchronizedUpdatablePriorityQueue implements UpdatablePriorityQueu
 
     private void ensureCapacity(int i) {
         if (i >= this.elements.length) {
-            int newCapacity = this.elements.length + DEFAULT_CAPACITY / 2;
+            int newCapacity = this.elements.length * 2;
             this.elements = Arrays.copyOf(this.elements, newCapacity);
         }
     }
